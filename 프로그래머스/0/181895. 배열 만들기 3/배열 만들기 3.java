@@ -8,10 +8,8 @@ class Solution {
         ArrayList<Integer> list = new ArrayList<>();
         
         for(int i = 0; i < intervals.length; i++){
-            int [] temp = Arrays.copyOfRange(arr, intervals[i][0], intervals[i][1] + 1);
-            
-            for(int j = 0; j < temp.length; j++){
-                list.add(temp[j]);
+            for(int j = intervals[i][0]; j <= intervals[i][1]; j++){
+                list.add(arr[j]);
             }
         }
         
