@@ -3,11 +3,17 @@ class Solution {
         int answer = 0;
         my_string = my_string.toUpperCase().replaceAll("[A-Z]", " ").trim();
         
+        if(my_string.isEmpty()){
+            return 0;
+        }
+        
         String [] arr = my_string.split(" +");
         
         for(int i = 0; i < arr.length; i++){
             answer += Integer.parseInt(arr[i]);
         }
+        
+        
         
         return answer;
     }
