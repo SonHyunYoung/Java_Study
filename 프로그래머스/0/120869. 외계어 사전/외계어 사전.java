@@ -11,7 +11,7 @@ class Solution {
                 for(int j = 0; j < spell.length; j++){
                     if(dic[i].indexOf(spell[j]) != -1){
                         if(j == spell.length - 1){
-                            return 1;
+                            answer = 1;
                         }
                     }
                     else{
